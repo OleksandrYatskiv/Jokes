@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapp {
+    display: flex;
+    height: 100vh;
+}
+
+.left-wrapp {
+    width: 65%;
+    padding: 50px 100px;
+    background-color: #fff;
+    height: 100%;
+}
+
+.right-wrapp {
+    width: 35%;
+    padding: 50px 100px;
+    background-color: #F8F8F8;
+    height: 100%;
+}
+
+.form {
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.form > label {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 320px;
+    height: 60px;
+    border-radius: 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#category {
+    display: flex;
+    margin-left: 30px;
+    overflow-x: auto;
+}
+
+#category label {
+    margin-top: 10px;
+    min-width: 90px;
+    height: 40px;
+}
+
+input[type="text"] {
+    width: 320px;
+    height: 40px;
+    border-radius: 10px;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+}
+
+.fav-text {
+    color: #ABABAB;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.card {
+    position: relative;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+    padding: 40px 40px;
+    margin-top: 30px;
+}
+
+.card .id {
+    font-size: 14px;
+    color: #8EA7FF;
+}
+
+.card-text {
+    color: #333333;
+    font-size: 26px;
+}
+
+.card .like {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.card .category {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 107px;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.fav-container {
+    overflow-y: auto;
+}
+
+.fav-container .card {
+    background-color: #fff;
+}
+
+.fav-container .category {
+    background-color: #F8F8F8;
+}
